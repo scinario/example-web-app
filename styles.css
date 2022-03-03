@@ -1,0 +1,66 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Center content */
+body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    /* Try to use OS default fonts */
+    font-family:Segoe UI WestEuropean,Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    -webkit-font-smoothing:antialiased;
+
+    /* Define some deault variables */
+    --primary-color: #114488;
+
+    --error-border: #D64545;
+    --error-background: #F17171;
+}
+
+main:empty,
+main:not(:empty) ~ section {
+    display: none;
+}
+
+.error-message {
+    border: 1px solid var(--error-border);
+    background-color: var(--error-background);
+    padding: 1rem;
+    border-radius: 4px;
+}
+.error-message p {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.headline {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid currentColor;
+    margin-bottom: .5rem;
+    font-style: italic;
+}
+
+ul {
+    max-height: 50vh;
+    overflow: auto;
+    scrollbar-width: thin;
+    -webkit-scrollbar-width: thin;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+ul::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #f0f0f0;
+}
+ul::-webkit-scrollbar-thumb {
+    background: #cdcdcd; 
+}

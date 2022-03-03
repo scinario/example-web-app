@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCINARIO Example Web Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/manifest.webmanifest">
+
+    <link rel="icon" href="/images/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    
+</head>
+<body>
+
+    <main></main>
+
+    <section id="signin-message">Signing In ...</section>
+
+    <script>
+        /* Place environment variables here. To run this example, 
+        you have to replace all occurences of <YOUR_***> with the values 
+        of your SCINARIO instance */
+        const SCINARIO_INSTANCE_URL = '<YOUR_SCINARIO_INSTANCE_URL>';
+        const SCINARIO_CLIENT_NAME = '<YOUR_SCINARIO_CLIENT>';
+        const SCINARIO_USER_NAME = '<YOUR_SCINARIO_USERNAME>';
+        const SCINARIO_PASSWORD = '<YOUR_SCINARIO_PASSWORD>';
+    </script>
+
+    <!-- Load SDK and sign in -->
+    <script src="main.js"></script>
+    
+    <!-- Add service worker for installability -->
+    <script src="app.js"></script>
+</body>
+</html>
