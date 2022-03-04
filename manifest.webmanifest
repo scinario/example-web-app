@@ -1,11 +1,8 @@
 {
     "short_name": "SCINARIO Example",
-    "name": "SCINARIO Example Web Application",
+    "name": "SCINARIO Basic Example Web Application",
     "description": "Learn how to use the SCINARIO SDK",
     "display": "standalone",
-    "display_override": [ 
-        "window-controls-overlay" 
-      ],
     "icons": [{
           "src": "images/128x128.png",
           "sizes": "128x128",
